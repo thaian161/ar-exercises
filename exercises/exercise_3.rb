@@ -1,6 +1,6 @@
 require_relative '../setup'
-require_relative './exercise_1'
-require_relative './exercise_2'
+require_relative './ex_1_create_stores'
+require_relative './ex_2_update_store1'
 
 puts "Exercise 3"
 puts "----------"
