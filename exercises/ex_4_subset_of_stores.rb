@@ -16,9 +16,14 @@ puts "----------"
 end
 
 @womens_stores = Store.where('womens_apparel = true AND annual_revenue < 1000000')
+# Store.where(womens_apparel: true).where("annual_revenue > ?", 100000)cd 
 
 @womens_stores.each do |store|
   puts "Name of store:#{store.name} - annual revebue is #{store.annual_revenue}"
 end
 
 # QUESTION For Mentor: why @men_stores work without '' but women with 2 conditions need '' and use womens_apparel = true while (mens_apparel: true)
+
+
+# There is 2 ways:
+# Store.where(womens_apparel: true).where("annual_revenue > ?", 100000)
